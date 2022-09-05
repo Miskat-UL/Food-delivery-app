@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_ui_food_delivery/variables/variablels.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -15,7 +13,7 @@ class _SplashScreen extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backgroundColor,
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         child: Stack(
           alignment: Alignment.center,
@@ -26,7 +24,7 @@ class _SplashScreen extends State<SplashScreen> {
               right: 0,
               child: Container(
                 height: MediaQuery.of(context).size.height * 0.7,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('assets/b_image2.png'),
                     fit: BoxFit.cover,
@@ -40,7 +38,7 @@ class _SplashScreen extends State<SplashScreen> {
               right: 0,
               child: Container(
                 height: MediaQuery.of(context).size.height * 0.5,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('assets/b2.png'),
                     fit: BoxFit.cover,
@@ -62,11 +60,9 @@ class _SplashScreen extends State<SplashScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        child: Image.asset(
-                          'assets/23.png',
-                          height: 50,
-                        ),
+                      Image.asset(
+                        'assets/23.png',
+                        height: 50,
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.center,

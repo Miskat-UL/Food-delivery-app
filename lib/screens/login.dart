@@ -1,8 +1,4 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_ui_food_delivery/variables/variablels.dart';
 
 class Login extends StatefulWidget {
@@ -139,7 +135,7 @@ class _Login extends State<Login> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Expanded(
@@ -147,7 +143,7 @@ class _Login extends State<Login> {
             children: [
               Container(
                 width: MediaQuery.of(context).size.width * .9,
-                padding: EdgeInsets.symmetric(vertical: 10),
+                padding: const EdgeInsets.symmetric(vertical: 10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
                   color: Colors.black,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_food_delivery/variables/variablels.dart';
 
+import 'login.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -108,7 +110,11 @@ class _SplashScreen extends State<SplashScreen> {
                           color: buttonBackgroundColorDeep,
                         ),
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (_)=> const Login()),
+                            );
+                          },
                           child: const Text(
                             'Get Started 😋',
                             style: TextStyle(color: Colors.black, fontSize: 20),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_food_delivery/screens/home.dart';
 import 'package:flutter_ui_food_delivery/variables/variablels.dart';
 
 class Login extends StatefulWidget {
@@ -149,7 +150,11 @@ class _Login extends State<Login> {
                   color: Colors.black,
                 ),
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (_)=> const Home()),
+                            );
+                  },
                   child: const Text(
                     'Login',
                     style: TextStyle(

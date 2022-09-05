@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_food_delivery/screens/home.dart';
+import 'package:flutter_ui_food_delivery/screens/login.dart';
 import 'package:flutter_ui_food_delivery/screens/splash.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SplashScreen(),
+      home: const Login(),
     );
   }
 }

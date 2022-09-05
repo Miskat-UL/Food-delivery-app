@@ -152,8 +152,8 @@ class _Login extends State<Login> {
                 child: TextButton(
                   onPressed: () {
                     Navigator.of(context).pushReplacement(
-                              MaterialPageRoute(builder: (_)=> const Home()),
-                            );
+                      MaterialPageRoute(builder: (_) => const Home()),
+                    );
                   },
                   child: const Text(
                     'Login',
@@ -168,31 +168,36 @@ class _Login extends State<Login> {
               const SizedBox(
                 height: 20,
               ),
-              Container(
-                width: MediaQuery.of(context).size.width * 0.9,
-                padding: const EdgeInsets.symmetric(vertical: 10),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(50),
-                  color: buttonBackgroundColor,
-                ),
-                child: TextButton(
-                  onPressed: () {},
-                  child: const Text('Register',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20,
-                        fontFamily: 'OpenSans',
-                      )),
+              Expanded(
+                child: Container(
+                  height: 20,
+                  width: MediaQuery.of(context).size.width * 0.9,
+                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    color: buttonBackgroundColor,
+                  ),
+                  child: TextButton(
+                    onPressed: () {},
+                    child: const Text('Register',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20,
+                          fontFamily: 'OpenSans',
+                        )),
+                  ),
                 ),
               ),
             ],
           )),
-          TextButton(
-            onPressed: () {},
-            child: const Text(
-              "Forgot Password?",
-              style: TextStyle(
-                color: Colors.white,
+          SizedBox(
+            child: TextButton(
+              onPressed: () {},
+              child: const Text(
+                "Forgot Password?",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
               ),
             ),
           ),
